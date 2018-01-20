@@ -1,0 +1,7 @@
+<h1>Generated pdf <%= Time.current %></h1>
+<p>
+  This was generated via react-rails & webpacker + wicked_pdf
+</p>
+
+<p>Below is a react component (we have to prerender so that ssr rendering happens)</p>
+<%= react_component("Test", { one: "a", two: "b", three: "c" }, { prerender: true }) %>

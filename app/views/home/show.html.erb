@@ -1,0 +1,5 @@
+<%= react_component("Test", { one: "fish", two: "fish", three: "client side rendered" }, { prerender: true }) %>
+<br />
+<br />
+<%= link_to "View PDF", home_path(format: :pdf) %> |
+<%= link_to "Send Email", home_path, alt: 'Go to http://localhost:1080 to view in development', method: :post, remote: true %>
